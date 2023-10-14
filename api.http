@@ -6,9 +6,9 @@ POST http://localhost:3000/user
 Content-Type: application/json
 
 {
-    "name":"name",
-    "email":"email",
-    "phone":"phone",
-    "cpf":"cpf",
+    "name":"felix tito nina",
+    "email":"felix@gmail.com",
+    "phone":"11985522347",
+    "cpf":"43047717877",
     "password":"password"
 }
