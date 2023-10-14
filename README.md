@@ -79,3 +79,17 @@ $ npx typeorm migration:create ./src/migration/create_table_state
 $ npx typeorm migration:create ./src/migration/create_table_city
 
 $ npx typeorm migration:create ./src/migration/create_table_address
+
+$ npx typeorm migration:create ./src/migration/alter-table-state
+
+$ npx typeorm migration:create ./src/migration/insert-in-state
+
+$ npx typeorm migration:create ./src/migration/insert-in-city
+
+
+$ nest g module state 
+$ nest g module city
+$ nest g module address 
+
+$ nest g controller state
+$ nest g service state
