@@ -1,6 +1,5 @@
 ###
-GET http://localhost:3000/city/11
-
+GET http://localhost:3000/city/26
 ###
 POST http://localhost:3000/city
 Content-Type: application/json
