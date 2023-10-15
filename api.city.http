@@ -1,0 +1,14 @@
+###
+GET http://localhost:3000/city/11
+
+###
+POST http://localhost:3000/city
+Content-Type: application/json
+
+{
+    "name":"felix tito nina",
+    "email":"felix@gmail.com",
+    "phone":"11985522347",
+    "cpf":"43047717877",
+    "password":"password"
+}

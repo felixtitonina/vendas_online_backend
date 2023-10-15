@@ -93,3 +93,7 @@ $ nest g module address
 
 $ nest g controller state
 $ nest g service state
+
+
+$ nest g controller city
+$ nest g service city
