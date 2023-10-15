@@ -10,5 +10,5 @@ Content-Type: application/json
     "email":"felix@gmail.com",
     "phone":"11985522347",
     "cpf":"43047717877",
-    "password":"password"
+    "password":"123456789"
 }
