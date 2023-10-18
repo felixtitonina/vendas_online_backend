@@ -1,4 +1,4 @@
-import { CityEntity } from './entities/address.entity';
+import { CityEntity } from './entities/city.entity';
 import { Controller, Get, Param } from '@nestjs/common';
 import { CityService } from './city.service';
 

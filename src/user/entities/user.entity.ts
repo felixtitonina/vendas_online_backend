@@ -25,10 +25,10 @@ export class UserEntity {
   typeUser: number;
 
   @CreateDateColumn({ name: 'created_at' })
-  createdAt: string;
+  createdAt: Date;
 
   @CreateDateColumn({ name: 'updated_at' })
-  updatedAt: string;
+  updatedAt: Date;
 
   @OneToMany(() => AddressEntity, (address) => address.user)
   addresses?: AddressEntity[];

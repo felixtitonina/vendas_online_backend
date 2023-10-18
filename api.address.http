@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
     "complement":"casa",
-    "number": 1,
+    "numberAddress": 1,
     "cep":"07261810",
-    "cityId": 111111111
+    "cityId": 1
 }
