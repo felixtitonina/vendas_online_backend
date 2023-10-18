@@ -1,0 +1,13 @@
+###
+GET http://localhost:3000/address
+
+###
+POST http://localhost:3000/address/38
+Content-Type: application/json
+
+{
+    "complement":"casa",
+    "number": 1,
+    "cep":"07261810",
+    "cityId": 111111111
+}
