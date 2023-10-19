@@ -1,4 +1,4 @@
-import { StateEntity } from './entities/address.entity';
+import { StateEntity } from './entities/state.entity';
 import { StateService } from './state.service';
 import { Controller, Get } from '@nestjs/common';
 

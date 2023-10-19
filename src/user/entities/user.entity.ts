@@ -29,7 +29,9 @@ export class UserEntity {
 
   @CreateDateColumn({ name: 'updated_at' })
   updatedAt: Date;
-
+  /**
+   * !Um @user pode ter varios endereços
+   */
   @OneToMany(() => AddressEntity, (address) => address.user)
   addresses?: AddressEntity[];
 }

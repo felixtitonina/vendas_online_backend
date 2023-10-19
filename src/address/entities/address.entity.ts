@@ -35,10 +35,16 @@ export class AddressEntity {
   @CreateDateColumn({ name: 'updated_at' })
   updatedAt: Date;
 
+  /**
+   * !Varios @address podem pertencer a um @user
+   */
   @ManyToOne(() => UserEntity, (user) => user.addresses)
   @JoinColumn([{ name: 'user_id', referencedColumnName: 'id' }])
   user?: UserEntity;
 
+  /**
+   * !Varios @address pode pertencer a uma @city
+   */
   @ManyToOne(() => CityEntity, (city) => city.addresses)
   @JoinColumn([{ name: 'city_id', referencedColumnName: 'id' }])
   city?: CityEntity;

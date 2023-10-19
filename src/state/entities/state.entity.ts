@@ -15,6 +15,9 @@ export class StateEntity {
   @CreateDateColumn({ name: 'updated_at' })
   updatedAt: Date;
 
+  /**
+   * !@state pode pertencer a varias cidades
+   */
   @OneToMany(() => CityEntity, (city) => city.state)
   cities?: CityEntity[];
 }
