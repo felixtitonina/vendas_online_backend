@@ -2,9 +2,9 @@
 GET http://localhost:3000/address
 
 ###
-POST http://localhost:3000/address/38
+POST http://localhost:3000/address
 Content-Type: application/json
-Authorization: seyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDQsInR5cGVVc2VyIjoxLCJpYXQiOjE2OTc3NzIxODksImV4cCI6MTY5ODM3Njk4OX0.m_HQAxJ74j8TMs3RlS935vysEVwhUvEYy-qmXJEJuts
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDQsInR5cGVVc2VyIjoxLCJpYXQiOjE2OTc3NzIxODksImV4cCI6MTY5ODM3Njk4OX0.m_HQAxJ74j8TMs3RlS935vysEVwhUvEYy-qmXJEJuts
 
 {
     "complement":"casa",
