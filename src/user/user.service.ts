@@ -3,7 +3,7 @@ import { CreateUserDto } from './dtos/createUser.dto';
 import { UserEntity } from './entities/user.entity';
 import * as bcrypt from 'bcrypt';
 import { Repository } from 'typeorm';
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { BadGatewayException, Injectable, NotFoundException } from '@nestjs/common';
 
 @Injectable()
 export class UserService {
@@ -12,6 +12,10 @@ export class UserService {
     private readonly userRepository: Repository<UserEntity>,
   ) {}
   async crateUser(createUserDto: CreateUserDto): Promise<UserEntity> {
+    const user = await this.findUserByEmail(createUserDto.email).catch(() => undefined);
+    if (user) {
+      throw new BadGatewayException(`E-mail ${createUserDto.email} já cadastrado no sistema.`);
+    }
     const saltOrRounds = 10;
     const passwordHash = await bcrypt.hash(createUserDto.password, saltOrRounds);
     return this.userRepository.save({

@@ -10,8 +10,8 @@ Content-Type: application/json
 
 {
     "name":"felix outlook",
-    "email":"felix@outlook.com",
+    "email":"felix@outlook.com.br",
     "phone":"11985522347",
     "cpf":"43047717877",
-    "password":"123456789"
+    "password":"134679"
 }

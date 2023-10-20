@@ -102,3 +102,6 @@ $ nest g service city
 
 $ nest g module cache
 $ nest g service cache
+
+
+$ npx typeorm migration:create ./src/migration/alter-table-user
