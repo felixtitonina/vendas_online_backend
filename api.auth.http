@@ -7,3 +7,12 @@ Content-Type: application/json
     "email":"felix@outlook.com",
     "password":"123456789"
 }
+
+###
+POST http://localhost:3000/auth
+Content-Type: application/json
+
+{
+    "email":"felix@outlook.com.br",
+    "password":"134679"
+}

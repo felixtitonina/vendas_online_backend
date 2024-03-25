@@ -1,9 +1,9 @@
+import { BadGatewayException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { CreateUserDto } from './dtos/createUser.dto';
-import { UserEntity } from './entities/user.entity';
 import * as bcrypt from 'bcrypt';
 import { Repository } from 'typeorm';
-import { BadGatewayException, Injectable, NotFoundException } from '@nestjs/common';
+import { CreateUserDto } from './dtos/createUser.dto';
+import { UserEntity } from './entities/user.entity';
 
 @Injectable()
 export class UserService {
