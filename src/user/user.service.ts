@@ -11,7 +11,7 @@ export class UserService {
     @InjectRepository(UserEntity)
     private readonly userRepository: Repository<UserEntity>,
   ) {}
-  async crateUser(createUserDto: CreateUserDto): Promise<UserEntity> {
+  async createUser(createUserDto: CreateUserDto): Promise<UserEntity> {
     const user = await this.findUserByEmail(createUserDto.email).catch(() => undefined);
     if (user) {
       throw new BadGatewayException(`E-mail ${createUserDto.email} já cadastrado no sistema.`);
